@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "mls-extended"
+client_id = "535fdbb0e0b02fc6bc05c6c5ed5aa236"
+application_url = "https://relations-gcc-sites-wordpress.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://relations-gcc-sites-wordpress.trycloudflare.com/auth/callback",
+  "https://relations-gcc-sites-wordpress.trycloudflare.com/auth/shopify/callback",
+  "https://relations-gcc-sites-wordpress.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "first-storedmx.myshopify.com"
